@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+	div#contact-info{
+		width:95%;	
+		margin:15px auto 15px auto;
+		
+	}
+	
+	/*O formulario como um todo, por isso o 'Form'*/	
+	div#contact-info form{
+		width:58%;
+		margin:5px;
+		padding:5px;
+		float:left;
+	}
+	
+
+	/*Divisao para o endereço, informaçoes etc*/
+	div#info{
+		margin:40px 0 0 20px;
+		float:left;
+		width:30%;
+		height:100%;
+		text-align:right;
+		font-size:.88em;
+		font-weight:200;
+	}	
+	
+	/*FORMULARIO*/
+
+	.form{
+		color:#7c8081;
+		border: solid 1px rgba(124, 128, 129, 0.2);
+		font-family: 'Lato', sans-serif;
+		outline:none;
+		height:40px;
+		padding-left:4px;
+		font-size:16px;
+		text-indent:22px;
+	}
+	.form:focus{
+		outline:1px solid #999;
+	}
+	.nome{
+		width:100%;
+		background:url('../img/nome-icon.png') no-repeat 2px 12px;
+	}
+	.email{
+		width:100%;
+		background:url('../img/email-icon.png') no-repeat 4px 12px;
+	}
+	.assunto{
+		width:100%;
+		background:url('../img/comment-icon.png') no-repeat 4px 12px;
+	}
+	.msg{
+		width:100%;
+		height:100px;
+		padding-top:4px;
+		background:url('../img/msg-icon.png') no-repeat 4px 4px;
+	}
+	.input{
+		background:url('../img/input-icon.png') no-repeat 8px 10px;
+		width:100px;
+		text-indent:16px;
+	}
+	.redefinir{
+		background:none;
+		width:100px;
+		background:url('../img/refresh-icon.png') no-repeat 4px 8px;
+		text-indent:20px;
+	}
+	
+	/*----------------------------IFRAME RESPONSIVE------------------------*/
+	
+		.panorama{
+			margin:0;
+			position:relative;
+			padding-bottom:28%;
+			height:0;
+			overflow:hidden;
+			width:100%;
+		}
+		
+		iframe{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;	
+		}
+
+	
+	
+@media only screen and (max-width:1060px) and (min-width:900px){
+	#tudo{width:97%; max-width:1060px;}
+}
+
+@media only screen and (max-width:900px) and (min-width:480px){
+}
+
+@media only screen and (max-width:480px){
+	.nome{width:280px;}
+	.email{width:280px;}
+	.assunto{width:280px;}
+	.msg{width:280px;}
+	.input{width:280px;}
+	.redefinir{width:280px;}
+	div#info{width:280px; padding: 0 60px 15px 0;}
+	nav{}
+	
+			.panorama{
+			margin:10px;
+			padding-bottom:55%;
+			height:0;
+			overflow:hidden;
+			width:100%;
+		}
+
+}
+

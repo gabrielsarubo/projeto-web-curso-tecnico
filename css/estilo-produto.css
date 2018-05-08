@@ -1,0 +1,221 @@
+@charset "utf-8";
+		
+	/*Esta div para banner está apresentada na PAGINA INCIAL DOS PRODUTOS*/
+	div#banner-inicio-produto{
+
+	}
+	
+		div#banner-inicio-produto img{
+			width:100%;
+		}
+	
+	/*Esta div para banner está apresentada na PAGINA DE CONTEUDO DOS PRODUTOS*/
+	div#banner-produtos{
+		width:100%;		
+	}
+
+/*=====================================Conteudo Geral Pagina Produtos=================================================*/
+	
+	/*Conteudo que estava no index*/
+	
+	div#conteudo-geral-produtos, section.produtos-esquerdo/*, aside.produtos-direito-menu, nav.menu-lateral*/{
+		margin:5px;
+		padding:5px;
+	}
+		
+		div#conteudo-geral-produtos{
+			
+		}
+	
+		section.produtos-esquerdo{
+			float:left;
+			width:72%;
+		}
+		
+		section.produtos-esquerdo article{
+			margin-bottom:30px;	
+			width:100%;
+		}
+		
+				section.produtos-esquerdo article p{
+					text-align:justify;	
+					text-indent:50px;
+					font-family:Segoe UI, sans-serif;
+					font-weight:300;
+					
+					border-top:solid 1px #CCCCCC;
+					padding-top:25px;
+				}
+				
+				section.produtos-esquerdo article h3{
+					font-family:Segoe UI, sans-serif;
+					font-weight:400;	
+					font-size:22px;
+				}
+		
+			article#artigo-1{
+			}
+						
+				section.produtos-esquerdo article#artigo-1 a{color:#000;border-bottom:dashed 1px #6DD900;}
+				section.produtos-esquerdo article#artigo-1 a:hover{color:#999;border-bottom:solid 1px #6DD900;}
+				
+			
+			article#artigo-2{
+				background-color:rgba(255,255,255,.3);
+				border-left:solid 2px #999999;
+			}
+			
+				article#artigo-2 div.sub-artigo-2{
+					width:92%;
+					padding-top:30px;
+					margin:auto;
+				}
+					
+				article#artigo-2 div.sub-artigo-2 h3{font-size:28px;color:#000; font-weight:lighter;}
+				article#artigo-2 div.sub-artigo-2 p{font-weight:350;padding-bottom:20px;text-indent:0;}
+			
+			article#artigo-3{
+				width:97%;
+				margin:auto;	
+			}	
+						
+				article#artigo-3 div.divisao-recursos{
+					float:left;
+					display:inline-block;
+					margin-right:10px;
+					width:200px;					
+					font-family:Segoe UI, sans-serif;
+					font-weight:300;
+				}
+				
+				div.divisao-recursos span a{border-bottom:1px dashed #666;color:#333;}
+				div.divisao-recursos span a:hover{border-bottom:1px solid #666;}
+				
+					article#artigo-3 div.divisao-recursos img{
+						margin-left:3px;
+						margin-top:10px;
+					}
+					
+						div.divisao-recursos h4{
+							font-family:Segoe UI, sans-serif;
+							font-size:18px;	
+							font-weight:400;
+						}
+								
+		
+		/*========MENU lateral=======*/
+		
+		aside.produtos-direito-menu{
+			float:right;
+			width:25%;	
+		}
+		
+			nav.menu-lateral{
+				/*position:fixed;top:330px;border:solid 1px #FF0000;*/	
+				background-color:rgba(209,209,209,.1);
+			}
+			
+			nav.menu-lateral ul{
+				margin:30px 0 0 23px;	
+				padding:30px 0 30px 0;
+				
+				list-style:none;
+			}
+			
+			nav.menu-lateral ul li a{
+				font-family:Segoe UI, sans-serif;
+				font-weight:300;
+				font-size:1.05em;
+				color:#464646;
+				text-transform:capitalize;
+			}
+			
+				nav.menu-lateral ul li{
+					padding-bottom:6px;
+				}
+				
+				nav.menu-lateral ul li:last-child{color:#000;padding-bottom:2px;padding-top:5px;padding-left:10px;border-left:solid 2px rgb(159,158,157);}/*Link Externo*/
+				nav.menu-lateral ul li:last-child a:hover{padding-left:0;border-left:none;transition:none;}	
+				
+				nav.menu-lateral ul li a:hover{
+					padding-left:10px;
+					border-left:solid 2px rgb(209,209,209);					
+					color:#202020;
+					transition:450ms;
+				}
+	
+	/*---------------------
+		Conteudo de Pagina
+	-----------------------*/
+	
+	div#conteudo-geral h3:first-child{text-align:center; font-size:1.4em; font-family:Segoe UI, Calibri, sans-serif; font-weight:lighter;margin:20px 0;}
+	/*PARAGRAFO MODIFICADO*/
+	div#conteudo-geral p.nota-produtos a{color:#666;border-bottom:1px dashed #666;}
+	div#conteudo-geral p.nota-produtos a:hover{color:#000;border-bottom:1px solid #666;}
+	div#conteudo-geral p.nota-produtos{
+		font-size:.88em; 
+		font-family:Segoe UI, Calibri, sans-serif; 
+		font-weight:lighter; 
+		width:80%;
+		margin:10px auto;
+		padding:10px; 
+		background-color:#EEEEEE;
+		clear:both;
+	}
+	
+	section.produtos-em-linha{
+		margin-bottom:5px;
+		margin-top:10px;
+		margin-right:0;
+		margin-left:14%;
+	}
+
+		figure.imagem-legendada{
+			position:relative;
+			width:240px;	
+			display:inline-block;
+			padding-left:5px;
+		}
+		
+		figure.imagem-legendada figcaption span a{color:#666;font-size:0.8em;text-transform:uppercase;text-decoration:none;border-bottom:1px dashed gray;}
+		figure.imagem-legendada figcaption span a:hover{border-bottom:1px solid gray;}
+		
+		figure.imagem-legendada figcaption{
+			position:absolute;
+			top:0px;
+			padding: 128px 0px 20px 15px;
+			transition: padding-top 400ms;
+			font-family:Segoe UI, Calibri, sans-serif;
+			font-size:0.97em;
+			font-weight:lighter;
+		}
+		
+		figure.imagem-legendada:hover figcaption{
+			padding-top:118px;
+		}
+
+@media only screen and (max-width:1060px) and (min-width:900px){
+	section.produtos-em-linha{width:70%;}
+	section.produtos-em-linha figure{width:210px;min-width:210px;}	
+	figure.imagem-legendada figcaption{padding: 110px 0px 20px 15px;}
+	figure.imagem-legendada:hover figcaption{padding-top:100px;}
+}
+
+@media only screen and (max-width:900px) and (min-width:480px){
+	section.produtos-em-linha{margin-left:20%;}
+	section.produtos-em-linha p{display:none;}
+	section.produtos-em-linha figure{width:150px;}
+	figure.imagem-legendada figcaption{padding: 85px 0 0 2em;}
+	figure.imagem-legendada:hover figcaption{padding-top:85px;}
+	
+}
+
+@media only screen and (max-width:480px){
+	#tudo{width:97%;}
+	section.produtos-em-linha{max-width:250px;margin-bottom:5px;margin-top:10px;margin-right:0;margin-left:10%;}
+	div#conteudo-geral-produtos{margin:5px 0;padding:5px 2px;}
+	nav.nav-menu-principal, header, footer, section{width:97%;}
+	article#artigo-1 video#video{width:100%;margin:10px 0;}
+	article#artigo-3 div.divisao-recursos{margin-bottom:20px;}
+	nav.menu-lateral{position:static;display:none;}
+}
